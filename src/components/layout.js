@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 
 import Header from './header'
 import './layout.css'
@@ -27,6 +27,35 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
+          <div>
+            Contents
+            <ul>
+              <li>
+                <Link to="/">200 Images, 200 Individual Components</Link>
+              </li>
+              <li>
+                <Link to="/page-2">
+                  200 Images, 200 Instances of the Reusable Component
+                </Link>
+              </li>
+              <li>
+                <Link to="/page-3">1 Image, 1 Individual Component</Link>
+              </li>
+              <li>
+                <Link to="/page-4">
+                  1 Image, 1 Instance of the Reusable Component
+                </Link>
+              </li>
+              <li>
+                <Link to="/page-5">
+                  200 Images, loaded the old fashioned way
+                </Link>
+              </li>
+              <li>
+                <Link to="/page-6">1 Image, loaded the old fashioned way</Link>
+              </li>
+            </ul>
+          </div>
           {children}
         </div>
       </>

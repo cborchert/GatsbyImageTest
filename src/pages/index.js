@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Image1 from '../components/images/Image1'
 import Image2 from '../components/images/Image2'
@@ -211,7 +210,6 @@ const IndexPage = () => (
     <h1>
       Loading 200 individual images, each with its own component and StaticQuery
     </h1>
-    <Link to="/page-2/">See the second demo</Link>
     <div className="image-grid">
       <Image1 />
       <Image2 />
@@ -414,7 +412,6 @@ const IndexPage = () => (
       <Image199 />
       <Image200 />
     </div>
-    <Link to="/page-2/">See the second demo</Link>
   </Layout>
 )
 
